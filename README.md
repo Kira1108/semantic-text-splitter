@@ -11,7 +11,7 @@ DOCX support - Handles Microsoft Word documents with full formatting awareness
 ```python
 from semantic_splitter.split_pipelines import SemanticPipeline
 pipe = SemanticPipeline()
-chunks = pipe.run("file.docx")
+chunks = pipe.split_docx("file.docx")
 ```
 
 ### Overall Process
