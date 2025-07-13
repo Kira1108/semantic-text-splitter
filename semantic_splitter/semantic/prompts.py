@@ -26,7 +26,7 @@ ANCHOR_FINDER_PROMPT = """
 Semantically split the following text into smaller chunks by identifying the optimal split points(anchors).
 
 Constraints:
-1. when splitting based on the resulting anchors, each chunk should be no between 500 - 1000 Chinese characters.
+1. when splitting based on the resulting anchors, each chunk should be between 500 - 1000 Chinese characters.
 2. anchors are found according to the splitting plan provided.
 3. do not need to add split anchors at the beginning or end of the text.
 
