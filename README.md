@@ -14,6 +14,12 @@ pipe = SemanticPipeline()
 chunks = pipe.split_docx("file.docx")
 ```
 
+```python
+from semantic_splitter.split_pipelines import SemanticPipeline
+pipe = SemanticPipeline(trim_long_chunks=True)
+chunks = pipe.split_text("Your long text here")
+```
+
 ### Overall Process
 The Semantic Splitter uses a three-stage pipeline approach to split documents semantically rather than by arbitrary character counts:
 

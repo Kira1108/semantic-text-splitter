@@ -2,3 +2,4 @@ openai
 instructor
 pydantic
 markitdown
+langchain-text-splitters==0.2.2
