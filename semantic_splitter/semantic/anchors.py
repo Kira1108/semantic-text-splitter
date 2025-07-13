@@ -28,10 +28,12 @@ class AnchorFinder:
         
         print("Planning the split...")
         plan = self.planner.run(document = text)
+        print(f"Split plan: {plan}\n")
         print("Finding anchors based on the plan...")
         response = self.llm.chat(
             messages=[{"role": "user", "content": ANCHOR_FINDER_PROMPT.format(plan=plan, text=text)}],
         )
+        print(f"Anchor sentences found: {response.anchor_sentences}\n")
         return response
     
     

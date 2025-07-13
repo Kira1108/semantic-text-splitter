@@ -17,7 +17,7 @@ class SemanticPipeline:
         
         if not self.trim_long_chunks:
             return chunks
-        
+        print("Trimming long chunks with recursive split...")
         trimmed_chunks = []
         for chunk in chunks:
             if len(chunk) > 1500:
