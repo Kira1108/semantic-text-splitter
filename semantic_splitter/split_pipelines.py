@@ -28,7 +28,7 @@ class SemanticPipeline:
 
     def split_docx(self, file_path: str):
         doc_content = self.reader.read(file_path)
-        chunks = self.run_text(doc_content)
+        chunks = self.split_text(doc_content)
         return chunks
     
 
