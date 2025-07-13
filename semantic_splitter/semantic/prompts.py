@@ -40,5 +40,6 @@ Here is the text you need to semantically split:
 </text>
 
 You need to return a strcutured json object defined by SemanticSplitAnchors.
-NOTE: each anchor sentence should be quoted EXACTLY from the original text, and it should be short enough(15 Chinese characters is preferred) to be unique, but long enough to be meaningful.
+NOTE: each anchor sentence should be quoted EXACTLY from the original text, and it should be short enough(LESS THAN 15 Chinese characters is preferred) to be unique, but long enough to be meaningful.
+UNIQUE SECTION HEADERS AS ANCHOR TEXTS ARE ALWAYS PREFERRED over other sentences.
 """
