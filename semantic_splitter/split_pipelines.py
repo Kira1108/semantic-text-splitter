@@ -21,9 +21,9 @@ class SemanticPipeline:
         trimmed_chunks = []
         for chunk in chunks:
             if len(chunk) > 1500:
-                trimmed_chunks.append(langchain_recursive_chinese_split(chunk, chunk_size=1000, chunk_overlap=100))
+                trimmed_chunks.extend(langchain_recursive_chinese_split(chunk, chunk_size=1000, chunk_overlap=100))
             else:
-                trimmed_chunks.append([chunk])
+                trimmed_chunks.append(chunk)
         return trimmed_chunks
 
     def split_docx(self, file_path: str):
