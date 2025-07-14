@@ -1,6 +1,13 @@
 # Semantic Splitter
 A text chunking library that uses AI to intelligently split documents based on semantic meaning rather than just character count.    
 
+## Install
+```bash
+git clone this_repo
+cd semantic-text-splitter
+pip install -e .
+```
+
 ## Features
 Semantic chunking - Splits documents at natural semantic boundaries    
 Azure OpenAI integration - Leverages Azure's GPT-4o model for intelligent splitting    
