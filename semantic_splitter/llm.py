@@ -25,6 +25,7 @@ class OpenAI:
             raise ValueError("Azure endpoint and API key must be provided.")
         
         self._client = AzureOpenAI(
+            azure_deployment='gpt-4o',
             azure_endpoint=self.azure_endpoint,
             api_key=self.api_key,
             api_version=self.api_version,
@@ -58,6 +59,7 @@ class InstructOpenAI:
         
         self._client = instructor.from_openai(
             AzureOpenAI(
+                azure_deployment='gpt-4o',
                 azure_endpoint=self.azure_endpoint,
                 api_key=self.api_key,
                 api_version=self.api_version,

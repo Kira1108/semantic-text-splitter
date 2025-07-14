@@ -1,5 +1,5 @@
 openai
 instructor
 pydantic
-markitdown
-langchain-text-splitters==0.2.2
+markitdown[docx]
+langchain-text-splitters
